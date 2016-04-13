@@ -15,6 +15,9 @@
 		7EF2A9E01CBB288900DBC8FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF2A9DE1CBB288900DBC8FD /* LaunchScreen.storyboard */; };
 		7EF2A9EB1CBB288900DBC8FD /* DrawerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2A9EA1CBB288900DBC8FD /* DrawerTests.m */; };
 		7EF2A9F61CBB288900DBC8FD /* DrawerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2A9F51CBB288900DBC8FD /* DrawerUITests.m */; };
+		7EF2AA051CBB292500DBC8FD /* Drawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2AA041CBB292500DBC8FD /* Drawing.m */; };
+		7EF2AA081CBC6D3100DBC8FD /* GuessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2AA071CBC6D3100DBC8FD /* GuessViewController.m */; };
+		7EF2AA0B1CBC6E9B00DBC8FD /* ShowDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF2AA0A1CBC6E9B00DBC8FD /* ShowDrawing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		7EF2A9F11CBB288900DBC8FD /* DrawerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF2A9F51CBB288900DBC8FD /* DrawerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawerUITests.m; sourceTree = "<group>"; };
 		7EF2A9F71CBB288900DBC8FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF2AA031CBB292500DBC8FD /* Drawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
+		7EF2AA041CBB292500DBC8FD /* Drawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drawing.m; sourceTree = "<group>"; };
+		7EF2AA061CBC6D3100DBC8FD /* GuessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessViewController.h; sourceTree = "<group>"; };
+		7EF2AA071CBC6D3100DBC8FD /* GuessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessViewController.m; sourceTree = "<group>"; };
+		7EF2AA091CBC6E9B00DBC8FD /* ShowDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowDrawing.h; sourceTree = "<group>"; };
+		7EF2AA0A1CBC6E9B00DBC8FD /* ShowDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowDrawing.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +112,8 @@
 			children = (
 				7EF2A9D31CBB288900DBC8FD /* AppDelegate.h */,
 				7EF2A9D41CBB288900DBC8FD /* AppDelegate.m */,
-				7EF2A9D61CBB288900DBC8FD /* ViewController.h */,
-				7EF2A9D71CBB288900DBC8FD /* ViewController.m */,
+				7EF2AA0D1CBC6ECB00DBC8FD /* Edit View */,
+				7EF2AA0C1CBC6EAB00DBC8FD /* Guess View */,
 				7EF2A9D91CBB288900DBC8FD /* Main.storyboard */,
 				7EF2A9DC1CBB288900DBC8FD /* Assets.xcassets */,
 				7EF2A9DE1CBB288900DBC8FD /* LaunchScreen.storyboard */,
@@ -138,6 +147,28 @@
 				7EF2A9F71CBB288900DBC8FD /* Info.plist */,
 			);
 			path = DrawerUITests;
+			sourceTree = "<group>";
+		};
+		7EF2AA0C1CBC6EAB00DBC8FD /* Guess View */ = {
+			isa = PBXGroup;
+			children = (
+				7EF2AA091CBC6E9B00DBC8FD /* ShowDrawing.h */,
+				7EF2AA0A1CBC6E9B00DBC8FD /* ShowDrawing.m */,
+				7EF2AA061CBC6D3100DBC8FD /* GuessViewController.h */,
+				7EF2AA071CBC6D3100DBC8FD /* GuessViewController.m */,
+			);
+			name = "Guess View";
+			sourceTree = "<group>";
+		};
+		7EF2AA0D1CBC6ECB00DBC8FD /* Edit View */ = {
+			isa = PBXGroup;
+			children = (
+				7EF2AA031CBB292500DBC8FD /* Drawing.h */,
+				7EF2AA041CBB292500DBC8FD /* Drawing.m */,
+				7EF2A9D61CBB288900DBC8FD /* ViewController.h */,
+				7EF2A9D71CBB288900DBC8FD /* ViewController.m */,
+			);
+			name = "Edit View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EF2AA051CBB292500DBC8FD /* Drawing.m in Sources */,
+				7EF2AA081CBC6D3100DBC8FD /* GuessViewController.m in Sources */,
 				7EF2A9D81CBB288900DBC8FD /* ViewController.m in Sources */,
+				7EF2AA0B1CBC6E9B00DBC8FD /* ShowDrawing.m in Sources */,
 				7EF2A9D51CBB288900DBC8FD /* AppDelegate.m in Sources */,
 				7EF2A9D21CBB288900DBC8FD /* main.m in Sources */,
 			);
